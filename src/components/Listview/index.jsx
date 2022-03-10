@@ -7,7 +7,7 @@ const ListItem = ({ todo, toggleSelect, toggleComplete }) => {
 	return (
 		<ListGroupItem className="d-flex align-items-center">
 			<Input type="checkbox" id="{todo.id}" checked={todo.isSelect} onChange={() => toggleSelect(todo.id)} />
-			<div className="px-5">
+			<div className="px-4">
 				<h4 className="mt-1">{todo.text}</h4>
 				<p>{todo.time.toDateString()}</p>
 			</div>
